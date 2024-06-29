@@ -1,0 +1,243 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #faf9f5;
+}
+video {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+#logo{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+#uppernav ul{
+    list-style: none;
+}
+#uppernav ul li{
+    float: left;
+}
+#uppernav ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+#uppernav ul li a:hover{
+    background-color: #f59342;
+}
+#uppernav{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.from, .to{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#box {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px 20px 20px 20px; /* Reduce bottom padding */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 20px;
+    position: relative;
+    top: -20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+select, input[type="date"] {
+    height: 40px;
+    width: 100%;
+}
+
+#passengers, #class {
+    grid-column: span 2;
+    justify-self: right;
+    width: 70%;
+}
+#gauchanairlines, #groupcompanies, #ourpartners, #stayintouch{
+    margin-left: 2%;
+    float: left;
+}
+#gauchanairlines ul, #groupcompanies ul, #ourpartners ul{
+    list-style-type: none;
+}
+#gauchanairlines ul li a, #groupcompanies ul li a, #ourpartners ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 2px;
+    color: black;
+}
+#gauchanairlines ul li a:hover, #groupcompanies ul li a:hover, #ourpartners ul li a:hover{
+    color: blue;
+}
+#gauchanairlines, #groupcompanies, #ourpartners, #stayintouch, #downloadourapp{
+    width: 22.5%;
+    display: block;
+    box-sizing: border-box;
+}
+#gauchanairlines, #groupcompanies, #ourpartners{
+    height: 150px;
+}
+i{
+    font-size: 25px;
+    color: black;
+}
+#stayintouch{
+    margin-bottom: 0;
+    height: 75px;
+}
+#downloadourapp{
+    float: left;
+    height: 75px;
+    margin-left: 2%;
+    margin-top: 0;
+}
+#rightalign{
+    text-align: right;
+}
+#navbox{
+    width: 100%;
+    height: 145px;
+    background-color:#d66727;
+    margin: 0;
+}
+#gallerybody a img{
+    margin: 10px;
+}
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+#gallery a {
+    display: block;
+}
+#contactform{
+    margin: 20px;
+    padding: 40px;
+    width: 50%;
+    margin: auto;
+}
+#contactform input{
+    margin-bottom: 20px;
+    height: 50px;
+}
+#contact{
+    margin: 40px;
+    padding: 40px;
+}
+#phone, #emailus, #mail {
+    width: 48%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#visitus{
+    width: 48%;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 48px;
+    box-sizing: border-box;
+}
+#phone, #visitus {
+    float: left;
+}
+
+#emailus, #mail {
+    float: right;
+}
+.sitemap{
+    margin: 20px;
+    padding: 20px;
+}
+.emptyimg{
+    margin-left: 30%;
+}
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 25%;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+    display: none; /* Hide all slides by default */
+}
+
+.slide.active {
+    display: block; /* Show only the active slide */
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 1;
+}
+
